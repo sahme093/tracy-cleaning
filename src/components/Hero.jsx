@@ -55,7 +55,6 @@ export default function Hero() {
         )}
       </section>
       <div
-        className="grayscale"
         style={{ height: 240, position: "relative", borderBottom: "2px solid var(--color-divider)" }}
       >
         <Photo src={BIZ.photos.hero} alt="A clean, bright room" placeholder="[Hero photo — a clean, bright room]" />

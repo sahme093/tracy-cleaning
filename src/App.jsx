@@ -4,6 +4,7 @@ import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Services from "./components/Services.jsx";
 import BeforeAfter from "./components/BeforeAfter.jsx";
+import Gallery from "./components/Gallery.jsx";
 import Reviews from "./components/Reviews.jsx";
 import ServiceArea from "./components/ServiceArea.jsx";
 import BottomBar from "./components/BottomBar.jsx";
@@ -40,6 +41,7 @@ export default function App() {
         <Hero />
         <Services onQuote={openQuote} />
         {BIZ.showBeforeAfter && <BeforeAfter />}
+        {BIZ.showGallery && <Gallery />}
         {BIZ.showReviews && <Reviews />}
         <ServiceArea />
         <div style={{ height: 76 }} />

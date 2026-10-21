@@ -18,11 +18,11 @@ export default function BeforeAfter() {
       <h3 style={{ margin: "0 0 4px" }}>Before &amp; after</h3>
       <p className="muted" style={{ margin: "0 0 12px", fontSize: 13 }}>Drag the slider to compare.</p>
       <div style={{ position: "relative", height: 260, border: "2px solid var(--color-text)", overflow: "hidden" }}>
-        <div className="grayscale" style={{ position: "absolute", inset: 0 }}>
+        <div style={{ position: "absolute", inset: 0 }}>
           <Photo src={BIZ.photos.after} alt="After cleaning" placeholder="[After photo]" />
         </div>
         <div
-          className="grayscale"
+
           style={{ position: "absolute", inset: 0, clipPath: `inset(0 ${100 - pos}% 0 0)` }}
         >
           <Photo src={BIZ.photos.before} alt="Before cleaning" placeholder="[Before photo — same angle]" />

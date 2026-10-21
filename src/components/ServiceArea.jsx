@@ -46,6 +46,7 @@ export default function ServiceArea() {
       )}
       <p className="muted" style={{ fontSize: 12, margin: "24px 0 0" }}>
         {BIZ.name} · {BIZ.phone} · {BIZ.hours}
+        {BIZ.address && <><br /><a href={BIZ.mapsUrl} target="_blank" rel="noreferrer">{BIZ.address}</a></>}
       </p>
     </section>
   );
